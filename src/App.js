@@ -5,10 +5,9 @@ import Admin from "./pages/Admin";
 function App() {
   return (
     <div className="App">
-      
+      <h1>Admin Panel</h1>
       <Routes>
-        <Route path="/" element={<h1>Dashboard</h1>}/>
-        <Route path="/admin" element={<Admin/>}/>
+        <Route path="/" element={<Admin/>}/>
       </Routes>
     </div>
   );
