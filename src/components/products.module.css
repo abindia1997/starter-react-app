@@ -1,0 +1,27 @@
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.brand,
+.model,
+.price,
+.ram,
+.rom {
+  text-align: center;
+}
+
+.image {
+  max-width: 50px;
+  height: auto;
+}
