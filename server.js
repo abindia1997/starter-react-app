@@ -1,6 +1,7 @@
 
 const express = require('express')
 const path = require("path");
+const cors = require('cors');
 const app = express()
 
 // #############################################################################
@@ -14,6 +15,9 @@ var options = {
   maxAge: '1m',
   redirect: false
 }
+app.use(cors({
+  origin: 'https://fine-ruby-chinchilla-cuff.cyclic.app'
+}));
 app.use(express.static('build', options))
 
 const port = process.env.PORT || 3000
