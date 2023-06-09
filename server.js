@@ -15,7 +15,7 @@ var options = {
   redirect: false,
 };
 app.use(cors({
-  origin: 'https://fine-ruby-chinchilla-cuff.cyclic.app'
+  origin: 'https://carmine-jellyfish-tie.cyclic.app/used-product'
 }));
 
 app.use(express.static(path.join(__dirname, 'build')));
